@@ -7,7 +7,7 @@ const Services = () => {
   .then(res => res.json())
   .then(data => setServices(data))
   return (
-    <div>
+    <div className='py-10'>
       <div>
         <p className="text-2xl text-orange-600 text-center">Services</p>
         <h1 className='text-4xl font-bold text-center'>Our Service Area</h1>
@@ -21,6 +21,9 @@ const Services = () => {
           ></ServiceCard>))
         }
       </div>
+      <div className='flex justify-center'>
+        <button className='btn btn-outline btn-error'>Mor Services</button>
+        </div>
     </div>
   );
 };
