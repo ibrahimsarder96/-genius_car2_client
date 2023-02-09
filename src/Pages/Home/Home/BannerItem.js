@@ -10,7 +10,7 @@ const BannerItem = ({slider}) => {
       <img src={image} className="w-full rounded-xl" alt='' />
       </div>
       <div className="absolute flex justify-end transform -translate-y-1/2 left-5 top-1/4">
-       <h1 className='text-white font-bold text-6xl'>Affordable <br />
+       <h1 className='text-white font-bold lg:text-6xl'>Affordable <br />
        Price for Car <br />
        Servicing
        </h1>

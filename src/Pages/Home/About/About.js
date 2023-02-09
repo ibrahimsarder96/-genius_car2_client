@@ -1,11 +1,13 @@
 import React from 'react';
-
+import person from '../../../assets/images/about_us/person.jpg';
+import parts from '../../../assets/images/about_us/parts.jpg';
 const About = () => {
   return (
-    <div className="hero min-h-screen bg-base-200">
+    <div className="hero my-10 bg-white">
   <div className="hero-content flex-col lg:flex-row">
-    <div className='w-1/2'>
-    <img src="/images/stock/photo-1635805737707-575885ab0820.jpg" className="max-w-sm rounded-lg shadow-2xl" />
+    <div className='relative w-1/2'>
+    <img src={person} alt='' className="h-full w-2/3 rounded-lg shadow-2xl" />
+    <img src={parts} alt='' className="absolute w-1/2 right-5 top-1/2 border-8 rounded-lg shadow-2xl" />
     </div>
     <div className='w-1/2'>
       <p className="text-xl font-bold text-orange-600">About Us</p>
