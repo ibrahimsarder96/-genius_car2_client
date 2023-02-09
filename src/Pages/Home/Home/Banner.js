@@ -6,7 +6,7 @@ import banner4 from '../../../assets/images/banner/4.jpg';
 import banner5 from '../../../assets/images/banner/5.jpg';
 import banner6 from '../../../assets/images/banner/6.jpg';
 import BannerItem from './BannerItem';
-import './Banner.css';
+
 const Banner = () => {
     const bannerData = [
       {
@@ -47,22 +47,13 @@ const Banner = () => {
       },
     ]
   return (
-    <div className="carousel w-full">
-    
+    <div className="carousel w-full py-10">
     {
       bannerData.map(slide => <BannerItem
       key={slide.id}
       slider={slide}
       ></BannerItem>)
-    }
-  
-    {/* <div id="slide2" className="carousel-item relative w-full">
-      <img src={banner2} className="w-full" alt='' />
-      <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
-        <a href="#slide1" className="btn btn-circle mr-5">❮</a> 
-        <a href="#slide3" className="btn btn-circle">❯</a>
-      </div>
-    </div>  */}
+      }
   </div>
   );
 };

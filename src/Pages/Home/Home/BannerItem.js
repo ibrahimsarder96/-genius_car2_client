@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Banner.css';
 
 const BannerItem = ({slider}) => {
   const {image, id, prev, next} = slider;
   return (
     <div id={`slide${id}`} className="carousel-item relative w-full">
       <div className='slide-img'>
-      <img src={image} className="w-full" alt='' />
+      <img src={image} className="w-full rounded-xl" alt='' />
       </div>
       <div className="absolute flex justify-end transform -translate-y-1/2 left-5 top-1/4">
        <h1 className='text-white font-bold text-6xl'>Affordable <br />
