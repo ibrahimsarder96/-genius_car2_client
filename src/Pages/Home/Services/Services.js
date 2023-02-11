@@ -22,7 +22,7 @@ const Services = () => {
         }
       </div>
       <div className='flex justify-center'>
-        <button className='btn btn-outline btn-error'>Mor Services</button>
+        <button className='btn btn-outline btn-error'>More Services</button>
         </div>
     </div>
   );
